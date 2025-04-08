@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Scroll After Refresh",
+  "version": "1.0",
+  "description": "Automatically scrolls to the bottom after each page refresh.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
